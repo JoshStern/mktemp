@@ -1,0 +1,44 @@
+{
+  "name": "@josh_stern/mktemp",
+  "version": "0.1.0",
+  "description": "Temporary files for node written in Typescript. Sync and async API using promises.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "gendocs": "typedoc --exclude *.spec.ts src",
+    "prepublishOnly": "npm run clean && npm run build",
+    "lint": "eslint --ext .ts src",
+    "lint:fix": "eslint --fix --ext .ts src",
+    "test": "npm run lint && jest"
+  },
+  "keywords": [
+    "temp",
+    "tmp",
+    "files",
+    "promise",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoshStern/mktemp"
+  },
+  "author": "Josh Stern <josh.stern95@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JoshStern/mktemp/issues"
+  },
+  "homepage": "https://github.com/JoshStern/mktemp#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.25",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.1",
+    "typedoc": "^0.20.25",
+    "typescript": "^4.1.4"
+  }
+}
