@@ -1,7 +1,7 @@
 {
   "name": "@josh_stern/mktemp",
-  "version": "0.1.1",
-  "description": "Temporary files for node written in Typescript. Sync and async API using promises.",
+  "version": "0.1.2",
+  "description": "Async temporary files for node written in Typescript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
