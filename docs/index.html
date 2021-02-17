@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>mktemp</title>
-	<meta name="description" content="Documentation for mktemp">
+	<title>@josh_stern/mktemp</title>
+	<meta name="description" content="Documentation for @josh_stern/mktemp">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script async src="assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">mktemp</a>
+					<a href="index.html" class="title">@josh_stern/mktemp</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -50,7 +50,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>mktemp</h1>
+			<h1>@josh_stern/mktemp</h1>
 		</div>
 	</div>
 </header>
@@ -69,24 +69,24 @@
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
-				<pre><code class="language-sh"><span style="color: #000000">npm install mktemp</span>
+				<pre><code class="language-sh"><span style="color: #000000">npm install @josh_stern/mktemp</span>
 </code></pre>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
 				<p><a href="https://joshstern.github.io/mktemp"><strong>Documentation Homepage</strong></a></p>
-				<p><code>mktemp</code> does its best to choose reasonable defaults and relies on NodeJS modules as much as possible to maintain compatibility across systems. It uses <code>fs.mkdtemp</code> for generating unique directories in your system&#39;s temp folder (<code>os.tmpdir()</code>).</p>
+				<p><code>@josh_stern/mktemp</code> does its best to choose reasonable defaults and relies on NodeJS modules as much as possible to maintain compatibility across systems. It uses <code>fs.mkdtemp</code> for generating unique directories in your system&#39;s temp folder (<code>os.tmpdir()</code>).</p>
 				<a href="#dir" id="dir" style="color: inherit; text-decoration: none;">
 					<h3><code>dir</code></h3>
 				</a>
 				<p>Generate a unique temporary directory.</p>
-				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">dir</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;mktemp&#039;</span><span style="color: #000000">;</span>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">dir</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@josh_stern/mktemp&#039;</span><span style="color: #000000">;</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myTempDir</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">dir</span><span style="color: #000000">();</span>
 <span style="color: #008000">// Write files to myTempDir.path</span>
 <span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">myTempDir</span><span style="color: #000000">.</span><span style="color: #795E26">clean</span><span style="color: #000000">();</span>
 </code></pre>
 				<p>Options can be provided to add a prefix to the temp dir.</p>
-				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">dir</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;mktemp&#039;</span><span style="color: #000000">;</span>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">dir</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@josh_stern/mktemp&#039;</span><span style="color: #000000">;</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myTempDir</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">dir</span><span style="color: #000000">({</span><span style="color: #001080">prefix:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my-dir&#039;</span><span style="color: #000000">});</span>
 <span style="color: #008000">// myTempDir.path is now /var/folders/9a/0abc/T/my-dirSBv8Uk or the equivalent for your system</span>
 <span style="color: #008000">// ...</span>
@@ -96,13 +96,13 @@
 					<h3><code>file</code></h3>
 				</a>
 				<p>Generates a unique directory and opens a file within.</p>
-				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">file</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;mktemp&#039;</span><span style="color: #000000">;</span>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">file</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@josh_stern/mktemp&#039;</span><span style="color: #000000">;</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myTempFile</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">file</span><span style="color: #000000">();</span>
 <span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">myTempFile</span><span style="color: #000000">.</span><span style="color: #001080">handle</span><span style="color: #000000">.</span><span style="color: #795E26">writeFile</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;Hello for now!&#039;</span><span style="color: #000000">);</span>
 <span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">myTempFile</span><span style="color: #000000">.</span><span style="color: #795E26">clean</span><span style="color: #000000">();</span>
 </code></pre>
 				<p>Options can be provided to set the file name, mode, flags, etc.</p>
-				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">file</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;mktemp&#039;</span><span style="color: #000000">;</span>
+				<pre><code class="language-ts"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">file</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@josh_stern/mktemp&#039;</span><span style="color: #000000">;</span>
 <span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myTempFile</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #795E26">file</span><span style="color: #000000">({</span><span style="color: #001080">name:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;my-file&#039;</span><span style="color: #000000">, </span><span style="color: #001080">ext:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;.txt&#039;</span><span style="color: #000000">});</span>
 <span style="color: #008000">// myTempFile.path now ends in &#039;my-file.txt&#039;</span>
 <span style="color: #008000">// ...</span>
