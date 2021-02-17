@@ -63,7 +63,7 @@ export interface TempDirOptions {
  *
  * @example
  * ```ts
- * import {dir} from 'mktemp';
+ * import {dir} from '@josh_stern/mktemp';
  * const myDir = await dir();
  * // ...
  * await myDir.clean();
@@ -131,7 +131,7 @@ export interface TempFileOptions {
  *
  * @example
  * ```ts
- * import {file} from 'mktemp';
+ * import {file} from '@josh_stern/mktemp';
  * const myFile = await file();
  * await myFile.handle.write('Hello for a little while');
  * await myFile.clean();
