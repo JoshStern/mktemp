@@ -29,7 +29,7 @@
     "url": "https://github.com/JoshStern/mktemp"
   },
   "author": "Josh Stern <josh.stern95@gmail.com>",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JoshStern/mktemp/issues"
   },
