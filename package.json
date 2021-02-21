@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/JoshStern/mktemp/issues"
   },
-  "homepage": "https://github.com/JoshStern/mktemp#readme",
+  "homepage": "https://joshstern.github.io/mktemp",
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.25",
