@@ -15,7 +15,7 @@ npm install @josh_stern/mktemp
 ```
 
 ## Usage
-[**Documentation Homepage**](https://joshstern.github.io/mktemp)
+[**Documentation Homepage**](https://mktemp.jpastern.dev)
 
 `@josh_stern/mktemp` does its best to choose reasonable defaults and relies on NodeJS modules as much as possible to maintain compatibility across systems. It uses `fs.mkdtemp` for generating unique directories in your system's temp folder (`os.tmpdir()`).
 
