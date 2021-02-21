@@ -1,8 +1,8 @@
 # Temporary directories and files for NodeJS
 ![License](https://img.shields.io/npm/l/@josh_stern/mktemp)
-![Coverage](https://img.shields.io/codecov/c/gh/JoshStern/mktemp)
+[![Coverage](https://img.shields.io/codecov/c/gh/JoshStern/mktemp)](https://app.codecov.io/gh/JoshStern/mktemp)
 ![Size](https://img.shields.io/bundlephobia/min/@josh_stern/mktemp)
-![Version](https://img.shields.io/npm/v/@josh_stern/mktemp)
+[![Version](https://img.shields.io/npm/v/@josh_stern/mktemp)](https://www.npmjs.com/package/@josh_stern/mktemp)
 
 Simple async wrapper for managing temporary directories and files.
 
