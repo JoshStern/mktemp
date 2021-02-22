@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TempDirOptions | @josh_stern/mktemp</title>
+	<title>CleanOptions | @josh_stern/mktemp</title>
 	<meta name="description" content="Documentation for @josh_stern/mktemp">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,10 @@
 					<a href="../modules.html">@josh_stern/mktemp</a>
 				</li>
 				<li>
-					<a href="../modules/index.html">index</a>
-				</li>
-				<li>
-					<a href="index.tempdiroptions.html">TempDirOptions</a>
+					<a href="cleanoptions.html">CleanOptions</a>
 				</li>
 			</ul>
-			<h1>Interface TempDirOptions</h1>
+			<h1>Interface CleanOptions</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Input options for temporary directories.</p>
+						<p>Options for cleaning a temporary resource.</p>
 					</div>
 				</div>
 			</section>
@@ -79,7 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TempDirOptions</span>
+						<span class="target">CleanOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -90,7 +87,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="index.tempdiroptions.html#prefix" class="tsd-kind-icon">prefix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="cleanoptions.html#force" class="tsd-kind-icon">force</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,18 +96,18 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="prefix" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prefix</h3>
-					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="force" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> force</h3>
+					<div class="tsd-signature tsd-kind-icon">force<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JoshStern/mktemp/blob/d33e30c/src/index.ts#L57">index.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/JoshStern/mktemp/blob/9400a8b/src/index.ts#L34">index.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Prefix given to folder before a random sequence of characters.
-							Default: Empty string</p>
+							<p>Silence errors while deleting resources when set to true.
+							Default: false</p>
 						</div>
 					</div>
 				</section>
@@ -122,42 +119,39 @@
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
 					</li>
-					<li class="current tsd-kind-module">
-						<a href="../modules/index.html">index</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/index.tempdir.html" class="tsd-kind-icon">Temp<wbr>Dir</a>
+					<li class=" tsd-kind-class">
+						<a href="../classes/tempdir.html" class="tsd-kind-icon">Temp<wbr>Dir</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/index.tempfile.html" class="tsd-kind-icon">Temp<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="index.cleanoptions.html" class="tsd-kind-icon">Clean<wbr>Options</a>
+					<li class=" tsd-kind-class">
+						<a href="../classes/tempfile.html" class="tsd-kind-icon">Temp<wbr>File</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="index.tempdiroptions.html" class="tsd-kind-icon">Temp<wbr>Dir<wbr>Options</a>
+					<li class="current tsd-kind-interface">
+						<a href="cleanoptions.html" class="tsd-kind-icon">Clean<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="index.tempdiroptions.html#prefix" class="tsd-kind-icon">prefix</a>
+								<a href="cleanoptions.html#force" class="tsd-kind-icon">force</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="index.tempfileoptions.html" class="tsd-kind-icon">Temp<wbr>File<wbr>Options</a>
+					<li class=" tsd-kind-interface">
+						<a href="tempdiroptions.html" class="tsd-kind-icon">Temp<wbr>Dir<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/index.html#dir" class="tsd-kind-icon">dir</a>
+					<li class=" tsd-kind-interface">
+						<a href="tempfileoptions.html" class="tsd-kind-icon">Temp<wbr>File<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/index.html#file" class="tsd-kind-icon">file</a>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#dir" class="tsd-kind-icon">dir</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#file" class="tsd-kind-icon">file</a>
 					</li>
 				</ul>
 			</nav>
@@ -169,14 +163,12 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 			</ul>
 		</div>
 	</div>
